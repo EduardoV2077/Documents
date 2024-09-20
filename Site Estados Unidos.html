@@ -5,7 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Os Estados Unidos Após a Primeira Guerra Mundial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #a37159; /* Fundo marrom clarinho */
+            color: #000000; /* Cor do texto marrom escuro */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header h1 {
+            text-align: center;
+            color: #2f1e1e; /* Título destacado */
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .main-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        section img {
+            max-width: 50%;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: #2f1e1e; /* Destaque para os subtítulos */
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .curiosity {
+            background-color: #eae7dc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #6d4c41;
+        }
+
+        footer {
+            text-align: center;
+            padding: px 0;
+            background-color: #3c2f2f;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        .sidebar-toggle {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background-color: #3c2f2f;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            background-color: #3c2f2f;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 250px;
+            height: 100%;
+            transition: left 0.3s ease;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar-toggle.active {
+            left: 300px;
+        }
+    </style>
 </head>
 <body>
     <button class="sidebar-toggle" id="sidebarToggle">☰</button>
@@ -14,7 +130,7 @@
         <h2>Menu</h2>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sobre">O começo de tudo</a></li>
                 <li><a href="#era">A Era das Ilusões</a></li>
                 <li><a href="#american-way">American Way of Life</a></li>
             </ul>
@@ -26,19 +142,48 @@
             <h1>Os Estados Unidos Após a Primeira Guerra Mundial</h1>
         </header>
 
+        <!-- Seção Sobre -->
         <section id="sobre">
-            <h2>Sobre</h2>
-            <p>A Primeira Guerra Mundial, também conhecida como Grande Guerra, foi um conflito global que teve lugar entre 1914 e 1918. O conflito envolveu a maioria das nações do mundo, incluindo todas as grandes potências, organizadas em duas alianças militares opostas: os Aliados e as Potências Centrais.</p>
+            <img src="primeira_guerra.png.jpg" alt="Primeira Guerra Mundial"> 
+            <div>
+                <h2>O começo de tudo</h2>
+                <p>Após a Primeira Guerra Mundial, a Europa estava devastada, com muitas mortes, cidades destruídas e uma grave crise econômica. Enquanto isso, os Estados Unidos se beneficiaram, tornando-se a principal potência econômica e emprestando dinheiro para a Europa em dificuldades. O dólar passou a ser a moeda de referência no comércio internacional.
+<br> <br>
+                    Embora os EUA estivessem crescendo, países como Inglaterra e França ainda dominavam a expansão capitalista em outras partes do mundo. Os Estados Unidos, por sua vez, começaram a exercer controle nas Américas, anexando colônias e buscando novos mercados e recursos. Nesse contexto, a política do "Big Stick", adotada por Theodore Roosevelt, defendia que os EUA utilizassem a diplomacia, mas estivessem prontos para usar a força militar quando necessário. Isso consolidou sua influência imperialista por meio de intervenções econômicas e políticas.
+                    <br> <br>
+                   O que é o "Big Stick?" <br> A política do "Big Stick", adotada por Theodore Roosevelt, defendia que os Estados Unidos deveriam usar a diplomacia primeiro, mas estarem prontos para usar a força militar se necessário. A frase "falar suavemente, mas carregar um grande porrete" resume essa estratégia. Isso resultou em intervenções militares na América Latina e no Caribe, onde os EUA atuaram como "policiais" regionais, expandindo sua influência e protegendo interesses comerciais.</p>
+                <div class="curiosity">
+                    <strong>Curiosidade:</strong> Você sabia que a Primeira Guerra Mundial foi o primeiro conflito a usar aviões em larga escala, inclusive em combates aéreos?
+                </div>
+            </div>
         </section>
 
+        <!-- Seção A Era das Ilusões -->
         <section id="era">
-            <h2>A Era das Ilusões</h2>
-            <p>A Crise de 1929 e a Grande Depressão subsequente abalaram profundamente o modelo de consumismo e prosperidade que caracterizava o American Way of Life na década de 1920. O colapso da Bolsa de Valores de Nova York em 1929 levou a uma onda de falências de empresas e indústrias, aumentando drasticamente o desemprego nos Estados Unidos. O crash interrompeu o ciclo de consumo excessivo e endividamento que sustentava esse estilo de vida. A crise econômica enfraqueceu a crença no capitalismo e no liberalismo econômico que eram pilares do American Way of Life. Esse fato abriu espaço para uma maior intervenção estatal na economia, como o New Deal de Franklin Roosevelt. O American Way of Life, baseado no consumismo e na prosperidade, perdeu força após a Crise de 1929. A Grande Depressão abalou a confiança da população nos valores de trabalho, liberdade e progresso que definiam esse estilo de vida. Apesar disso, o American Way of Life continuou a exercer influência cultural e ideológica, sendo exportado para outros países, como o Brasil, durante o governo de Getúlio Vargas. Mas sua essência consumista e eufórica foi profundamente abalada pela crise econômica.</p>
+            <img src="era-das-ilusoes.png.jpg" alt="Crise de 1929">
+            <div>
+                <h2>A Era das Ilusões</h2>
+                <p>No início dos anos 1920, a economia dos Estados Unidos estava em crescimento e se baseava na cultura do consumo. Com mais dinheiro, as classes médias urbanas começaram a frequentar cinemas, teatros e festas, fazendo do entretenimento uma parte importante da economia. A indústria cultural começou a moldar o que as pessoas compravam, prometendo felicidade e status, mesmo que temporários.
+<br>  <br> 
+                    A indústria automobilística, que estava em ascensão, também teve um grande papel nesse desenvolvimento, melhorando técnicas de produção e vendendo produtos duráveis. Além disso, muitos imigrantes, especialmente europeus, chegaram aos EUA, ajudando a impulsionar a produção industrial, pois já tinham experiência no trabalho em fábricas.
+ <br> <br>                   
+                    As pessoas acreditavam que essa prosperidade nunca acabaria, mas o colapso da Bolsa de Valores de Nova York interrompeu esse crescimento. Assim, a chamada "Era das Ilusões" (1919-1929) chegou ao fim, em parte devido a uma crise de superprodução.<p>
+                <div class="curiosity">
+                    <strong>Curiosidade:</strong> Após o crash da bolsa, o famoso "Cais dos Milhões" de Wall Street viu inúmeros investidores perderem fortunas da noite para o dia.
+                </div>
+            </div>
         </section>
 
+        <!-- Seção American Way of Life -->
         <section id="american-way">
-            <h2>American Way of Life</h2>
-            <p>A Crise de 1929 e a Grande Depressão subsequente abalaram profundamente o modelo de consumismo e prosperidade que caracterizava o American Way of Life na década de 1920. O colapso da Bolsa de Valores de Nova York em 1929 levou a uma onda de falências de empresas e indústrias, aumentando drasticamente o desemprego nos Estados Unidos. O crash interrompeu o ciclo de consumo excessivo e endividamento que sustentava esse estilo de vida. A crise econômica enfraqueceu a crença no capitalismo e no liberalismo econômico que eram pilares do American Way of Life. Esse fato abriu espaço para uma maior intervenção estatal na economia, como o New Deal de Franklin Roosevelt. O American Way of Life, baseado no consumismo e na prosperidade, perdeu força após a Crise de 1929. A Grande Depressão abalou a confiança da população nos valores de trabalho, liberdade e progresso que definiam esse estilo de vida. Apesar disso, o American Way of Life continuou a exercer influência cultural e ideológica, sendo exportado para outros países, como o Brasil, durante o governo de Getúlio Vargas. Mas sua essência consumista e eufórica foi profundamente abalada pela crise econômica.</p>
+            <img src="way-of-life.png.jpg" alt="American Way of Life">
+            <div>
+                <h2>American Way of Life</h2>
+                <p>O american way of life, ou o “jeito americano de ser”, é uma autoimagem criada nos Estados Unidos, com caráter nacionalista, em que os(as) estadunidenses exaltam a sua própria organização e tradição social como ideal. Essa idealização de si foi e ainda é utilizada na narrativa dos(as) estadunidenses sobre si mesmos(as). A defesa e a expansão do american way of life estão na base do pensamento ideológico do Big Stick, da euforia econômica dos anos 1920, da luta contra o nazismo e o fascismo durante a Segunda Guerra Mundial, na disputa contra a União Soviética nos anos de Guerra Fria, assim como na nomeada guerra ao terrorismo, já no século XXI.<p></p>
+                <div class="curiosity">
+                    <strong>Curiosidade:</strong> O "American Way of Life" promovia a ideia de que qualquer um poderia prosperar através do trabalho duro, um conceito que impactou até culturas estrangeiras.
+                </div>
+            </div>
         </section>
     </div>
 
@@ -54,14 +199,13 @@
 
             sidebarToggle.addEventListener('click', function() {
                 sidebar.classList.toggle('open');
-                sidebarToggle.classList.toggle('hidden');
+                sidebarToggle.classList.toggle('active');
             });
 
-            // Close sidebar when clicking outside of it
             body.addEventListener('click', function(event) {
                 if (!sidebar.contains(event.target) && !sidebarToggle.contains(event.target) && sidebar.classList.contains('open')) {
                     sidebar.classList.remove('open');
-                    sidebarToggle.classList.remove('hidden');
+                    sidebarToggle.classList.remove('active');
                 }
             });
         });
